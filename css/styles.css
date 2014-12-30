@@ -1,0 +1,10 @@
+a.footer-button-left.ui-btn.ui-corner-all {
+	margin: 5px;
+	float: left;
+}
+
+a.footer-button-right.ui-btn.ui-corner-all {
+	
+	float: right;
+	margin-right: 5px;
+}
