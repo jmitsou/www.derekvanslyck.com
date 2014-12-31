@@ -3,6 +3,11 @@ a.footer-button-left.ui-btn.ui-corner-all {
 	float: left;
 }
 
+a.footer-button-right.ui-btn.ui-corner-all {
+	float: right;
+	margin-right: 5px;
+}
+
 p#logo {
 	text-align: center;
 	display: block;
@@ -13,9 +18,4 @@ form#log {
 	right: 50%;
 	left: 50%;
 	margin-top: 30%;
-}
-
-a.footer-button-right.ui-btn.ui-corner-all {
-	float: right;
-	margin-right: 5px;
 }
