@@ -54,7 +54,6 @@
  			<div data-role="footer" data-position="fixed">
  				<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
  				<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
- 				<p id="logo">Design by: www.JaKaDesigns.com</p>
  			</div>
  		</div> 
 <!--Ologin Page ends-->
@@ -65,15 +64,14 @@
  			<a href="#ologin" class="ui-btn-left" id="htext">Operator Login</a>
  		</div>
  		<div data-role="content">
- 			<a href="#spage" class="ui-btn" id="EC">Existing Company</a>
- 			<a href="#spage" class="ui-btn" id="NC">New Company</a>
+ 			<a href="#excomp" class="ui-btn" id="EC">Existing Company</a>
+ 			<a href="#necomp" class="ui-btn" id="NC">New Company</a>
 <!--this is a temp link to get to session page delete after EC and NC pages are complete-->
  			<a href="#spage" class="ui-btn" id="NC">Session Page</a>
  		</div>
  		<div data-role="footer" data-position="fixed">
  			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
  			<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
- 			<p id="logo">Design by: www.JaKaDesigns.com</p>
  		</div>
  	</div> 
 <!--Operator Page ends-->
@@ -90,7 +88,6 @@
  		<div data-role="footer" data-position="fixed">
  			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
  			<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
- 			<p id="logo">Design by: www.JaKaDesigns.com</p>
  		</div>
  	</div> 
 <!--Session Page ends-->
@@ -105,7 +102,6 @@
 		<div data-role="footer" data-position="fixed">
 			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
 			<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
-			<p id="logo">Design by: www.JaKaDesigns.com</p>
 		</div>
 	</div> 
 <!--Admin Page ends-->
@@ -120,7 +116,6 @@
 		<div data-role="footer" data-position="fixed">
 			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
 			<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
-			<p id="logo">Design by: www.JaKaDesigns.com</p>
 		</div>
 	</div> 
 <!--Add Page ends-->
@@ -134,11 +129,63 @@
 		</div>
 		<div data-role="footer" data-position="fixed">
 			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
-			<p id="logo">Design by: www.JaKaDesigns.com</p>
 		</div>
 	</div> 
 <!--Support Page ends-->
-	
+
+<div data-role="page" id="excomp">
+		<div data-role="header" data-position="fixed">
+			<h1>Existing Company</h1>
+		</div>
+		<div data-role="content">
+			<form>
+     			<label for="search-1">Search:</label>
+     			<input type="search" name="search-1" id="search-1" value="">
+			</form>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
+		</div>
+	</div> 
+<!--Existing Page ends-->
+
+<div data-role="page" id="necomp">
+		<div data-role="header" data-position="fixed">
+			<h1>New Company</h1>
+		</div>
+		<div data-role="content">
+			<form>
+			    <div class="ui-field-contain">
+     				<label for="text-3">Company Name:</label>
+     				<input type="text" data-clear-btn="true" data-inline="true" name="text-3" id="text-3" value="">
+     			
+     				<label for="text-3">Address:</label>
+     				<input type="text" data-clear-btn="true" data-inline="true"name="text-3" id="text-3" value="">
+     				
+     				<label for="text-3">City:</label>
+     				<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+     			
+     				<label for="text-3">State:</label>
+     				<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+     			
+     				<label for="tel-2">Phone Number:</label>
+     				<input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value="">
+     				
+     				<label for="text-3">Contact:</label>
+     				<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
+				
+     				<label for="textarea-1">Notes:</label>
+    				<textarea name="textarea-1" id="textarea-1"></textarea>
+    			</div>
+    				<input type="submit" data-inline="true" data-theme="b" value="Submit">
+ 					<input type="reset" data-inline="true" data-theme="b"value="Reset">
+			</form>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
+		</div>
+	</div> 
+<!--New Comp Page ends-->	
   
 <!-- JavaScript under here -->
   <script src="js/main.js" type="text/javascript"></script>
