@@ -64,8 +64,8 @@
  			<a href="#ologin" class="ui-btn-left" id="htext">Operator Login</a>
  		</div>
  		<div data-role="content">
- 			<a href="#excomp" class="ui-btn" id="EC">Existing Company</a>
- 			<a href="#necomp" class="ui-btn" id="NC">New Company</a>
+ 			<a href="#excomp" class="ui-btn" id="EC">Existing Venue</a>
+ 			<a href="#necomp" class="ui-btn" id="NC">New Venue</a>
 <!--this is a temp link to get to session page delete after EC and NC pages are complete-->
  			<a href="#spage" class="ui-btn" id="NC">Session Page</a>
  		</div>
@@ -135,13 +135,18 @@
 
 <div data-role="page" id="excomp">
 		<div data-role="header" data-position="fixed">
-			<h1>Existing Company</h1>
+			<h1>Existing Venue</h1>
 		</div>
 		<div data-role="content">
-			<form>
-     			<label for="search-1">Search:</label>
-     			<input type="search" name="search-1" id="search-1" value="">
-			</form>
+		<h4>Search for existing venue:</h4>
+			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search..." data-inset="true">
+			    <li><a href="#">venue 1</a></li>
+			    <li><a href="#">venue 2</a></li>
+			    <li><a href="#">venue 3</a></li>
+			    <li><a href="#">venue 4</a></li>
+			    <li><a href="#">venue 5</a></li>
+			    <li><a href="#">venue 6</a></li>
+			</ul>
 		</div>
 		<div data-role="footer" data-position="fixed">
 			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
@@ -151,34 +156,29 @@
 
 <div data-role="page" id="necomp">
 		<div data-role="header" data-position="fixed">
-			<h1>New Company</h1>
+			<h1>New Venue</h1>
 		</div>
 		<div data-role="content">
-			<form>
-			    <div class="ui-field-contain">
-     				<label for="text-3">Company Name:</label>
-     				<input type="text" data-clear-btn="true" data-inline="true" name="text-3" id="text-3" value="">
-     			
-     				<label for="text-3">Address:</label>
-     				<input type="text" data-clear-btn="true" data-inline="true"name="text-3" id="text-3" value="">
-     				
-     				<label for="text-3">City:</label>
-     				<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
-     			
-     				<label for="text-3">State:</label>
-     				<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
-     			
-     				<label for="tel-2">Phone Number:</label>
-     				<input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value="">
-     				
-     				<label for="text-3">Contact:</label>
-     				<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
-				
-     				<label for="textarea-1">Notes:</label>
-    				<textarea name="textarea-1" id="textarea-1"></textarea>
-    			</div>
-    				<input type="submit" data-inline="true" data-theme="b" value="Submit">
- 					<input type="reset" data-inline="true" data-theme="b"value="Reset">
+			<form method="post" action="">
+				<h4 id="des">Please enter your Venue information</h4>
+				    <div data-role="controlgroup">
+	     				<label for="cname" class="ui-hidden-accessible">Venue Name:</label>
+						<input type="text" name="textinput-4" id="textinput-4" placeholder="Venue Name:" value="">					
+						<label for="address" class="ui-hidden-accessible">Address:</label>
+						<input type="text" name="textinput-4" id="textinput-4" placeholder="Address:" value="">					
+						<label for="city" class="ui-hidden-accessible">City:</label>
+						<input type="text" name="textinput-4" id="textinput-4" placeholder="City:" value="">					
+						<label for="state" class="ui-hidden-accessible">State:</label>
+						<input type="text" name="textinput-4" id="textinput-4" placeholder="State:" value="">					
+						<label for="number" class="ui-hidden-accessible">Phone Number:</label>
+	     				<input type="tel" name="tel-2" id="tel-2" placeholder="Phone Number:"value="">					
+						<label for="con" class="ui-hidden-accessible">Contact:</label>
+						<input type="text" name="textinput-4" id="textinput-4" placeholder="Contact:" value="">  				
+	     				<label for="notes" class="ui-hidden-accessible">Notes:</label>
+	    				<textarea name="textarea-1" id="textarea-1" placeholder="enter notes:" value=""></textarea>
+	    			</div>
+	    				<input type="submit" data-inline="true" data-theme="b" value="Submit">
+	 					<input type="reset" data-inline="true" data-theme="b"value="Reset">
 			</form>
 		</div>
 		<div data-role="footer" data-position="fixed">
