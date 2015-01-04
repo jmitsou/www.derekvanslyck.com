@@ -1,3 +1,54 @@
+/*TOP*/
+
+p#ans {
+	text-align: center;
+}
+
+p#qes {
+	text-align: center;
+}
+
+
+#topp{
+
+	position:fixed;
+	background-color: #ffffff;
+	color: #000000;
+	z-index: 1;
+	width: 100%;
+	padding-left: 0;
+	margin-top: 10px;
+}
+
+div#bott1{
+	z-index: -1;
+	width: 100%;
+	margin-top: 10px;
+	height: 400px;
+	
+}
+
+
+a.header-button-left.ui-btn.ui-corner-all {
+	float: left;
+}
+
+a.header-button-right.ui-btn.ui-corner-all {
+	float: right;
+}
+
+
+
+/*Bottom*/
+
+
+div#bott {
+	z-index: -1;
+	width: 100%;
+	margin-top: 220px;
+}
+
+
 a.footer-button-left.ui-btn.ui-corner-all {
 	margin: 5px;
 	float: left;
@@ -13,9 +64,3 @@ p#logo {
 	display: block;
 }
 
-form#log {
-	display: block;
-	right: 50%;
-	left: 50%;
-	margin-top: 30%;
-}
