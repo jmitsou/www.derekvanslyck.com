@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8"/>
  <meta name="HandheldFriendly" content="True">
- <meta name="MobileOptimized" content="320"/>
+ <meta name="MobileOptimized"/>
  <meta name="viewport" content="width=device-width">
  <meta content="index, follow" name="robots">
  <meta http-equiv="cleartype" content="on">
@@ -30,6 +30,9 @@
  			<!--<p>an image will go here for the logo</p>
  			<p>A little about the app</p>-->
  			
+ 			<a href="#opage" class="ui-btn">Single Session</a>
+ 			<a href="#opage" class="ui-btn">Continuous Session</a>
+ 			<a href="#opage" class="ui-btn">Coverall Session</a>
  			<a href="#opage" class="ui-btn">Begin</a>
  		</div>
  		<div data-role="footer" data-position="fixed"> <h1>Design by: www.JaKaDesigns.com</h1>
@@ -37,37 +40,29 @@
  	</div> 
 <!--Home Page ends-->
  	
- 	<div data-role="page" id="ologin">
- 			<div data-role="header" data-position="fixed">
- 				<h1>Operator Login Page</h1>
- 			</div>
- 			<div data-role="content">
- 				<form method="post" action="" id="log">
- 					<label for="text-3">Username:</label>
- 					<input type="text" data-clear-btn="true" name="text-3" id="text-3" value="">
- 					<label for="password-2">Password:</label>
- 					<input type="password" data-clear-btn="true" name="password-2" id="password-2" value="" autocomplete="off">
- 					<input type="submit" data-inline="true" data-theme="b" value="Submit">
- 					<input type="reset" data-inline="true" data-theme="b"value="Reset">
- 				</form>
- 			</div>
- 			<div data-role="footer" data-position="fixed">
- 				<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
- 				<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
- 			</div>
- 		</div> 
-<!--Ologin Page ends-->
  	
  	<div data-role="page" id="opage">
  		<div data-role="header" data-position="fixed">
  			<h1>Operator Page</h1>
- 			<a href="#ologin" class="ui-btn-left" id="htext">Operator Login</a>
+ 			<a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="pop">Operator Login</a>
+			<div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all">
+    		<form>
+        		<div style="padding:10px 20px;">
+	            <h3>Please sign in</h3>
+	            <label for="un" class="ui-hidden-accessible">Username:</label>
+	            <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+	            <label for="pw" class="ui-hidden-accessible">Password:</label>
+	            <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+	            <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b">Sign in</button>
+        </div>
+    </form>
+</div>
  		</div>
  		<div data-role="content">
  			<a href="#excomp" class="ui-btn" id="EC">Existing Venue</a>
  			<a href="#necomp" class="ui-btn" id="NC">New Venue</a>
 <!--this is a temp link to get to session page delete after EC and NC pages are complete-->
- 			<a href="#spage" class="ui-btn" id="NC">Session Page</a>
+ 			<a href="#askq" class="ui-btn" id="NC">Session Page</a>
  		</div>
  		<div data-role="footer" data-position="fixed">
  			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
@@ -76,15 +71,188 @@
  	</div> 
 <!--Operator Page ends-->
  	
- 	<div data-role="page" id="spage">
- 		<div data-role="header" data-position="fixed">
- 			<a href="#Agroup" class="ui-btn-left" id="htext">Add Team</a>
-			<a href="#Gstan" class="ui-btn-rigth" id="htext">Team Standings</a>
- 			<h1>Session Page</h1>
+ 	<div data-role="page" id="askq">
+ 		<div data-role="header" data-position="fixed" data-theme="b">
+ 			<a href="#ateam1" class="ui-btn ui-corner-all header-button-left ui-btn-a">Add Team</a>
+ 			<a href="#tstan" class="ui-btn ui-corner-all header-button-right ui-btn-a">Team Standings</a>
+ 			<h1></h1>
  		</div>
- 		<div data-role="content">
- 			this is the session page
+ 		<div data-role="content" id="topp">
+			 			<p id="ans">answer goes here</p>
+			 			<a href="#timeup" class="ui-btn ui-btn-block" >Ask Question # <p id="q"></p></a>
+			 			<p id="qes">question goes here</p>
+		</div>
+		<div data-role="content" data-theme="b" id="bott" data-role="inline"> 	
+             
+			<table data-role="table" data-mode="columntoggle">
+				<tr>
+                    <th id="cell0"</th>
+                    <a href="#tpage" class="cell">33</a>
+                    <th id="cell5" </th>
+                    <a href="#tpage" class="cell">34</a>
+                    <th id="cell10"</th>
+                    <a href="#tpage" class="cell">35</a>
+                    <th id="cell14"</th>
+                    <a href="#tpage" class="cell">36</a>
+                    <th id="cell19"</th>
+                    <a href="#tpage" class="cell">37</a>
+                </tr>
+
+                <tr>
+
+                    <th id="cell1"> 38</th>
+
+                    <th id="cell6"> 39</th>
+
+                    <th id="cell11"> 40</th>
+
+                    <th id="cell15"> 41</th>
+
+                    <th id="cell20"> 42</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell2"> 43</th>
+
+                    <th id="cell7"> 44</th>
+
+                    <th id="free">Free</th>
+
+                    <th id="cell16">46</th>
+
+                    <th id="cell21"> 47</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell3"> 48</th>
+
+                    <th id="cell8"> 49</th>
+
+                    <th id="cell12"> 50</th>
+
+                    <th id="cell17"> 51</th>
+
+                    <th id="cell22"> 52</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell4"> 53</th>
+
+                    <th id="cell9"> 54</th>
+
+                    <th id="cell13"> 55</th>
+
+                    <th id="cell18"> 56</th>
+
+                    <th id="cell23"> 57</th>
+
+                </tr>	
+			</table>
+			
  		</div>
+ 		<div data-role="footer" data-position="fixed" data-theme="a">
+ 			<a href="#home" class="ui-btn ui-corner-all footer-button-left ui-btn-b">Home</a>
+ 			<a href="#support" class="ui-btn ui-corner-all footer-button-right ui-btn-b ">Support</a>
+ 		</div>
+ 	</div> 
+<!--Session Page ends-->
+
+ 	<div data-role="page" id="timeup">
+ 		<div data-role="header" data-position="fixed" data-theme="b">
+ 			<a href="#ateam2" class="ui-btn-left" id="htext" data-theme="a">Add A Team</a>
+			<a href="#dques" class="ui-btn-rigth" id="htext" data-theme="a">Disqualify Question</a>
+			<h1></h1>
+ 		</div>
+ 		<div data-role="content" id="topp">
+ 			<p id="ans">answer goes here</p>
+			 <a href="#askq" class="ui-btn ui-btn-block" >Time is Up </a>
+			 <p id="qes">question goes here</p>
+ 			
+ 		</div>
+ 		<div data-role="content" data-theme="b" id="bott" data-role="inline">        
+			<table data-role="table" data-mode="columntoggle">
+				<tr>
+                    <th id="cell0"</th>
+                    <a href="#tpage" class="cell">33</a>
+                    <th id="cell5" </th>
+                    <a href="#tpage" class="cell">34</a>
+                    <th id="cell10"</th>
+                    <a href="#tpage" class="cell">35</a>
+                    <th id="cell14"</th>
+                    <a href="#tpage" class="cell">36</a>
+                    <th id="cell19"</th>
+                    <a href="#tpage" class="cell">37</a>
+                </tr>
+
+                <tr>
+
+                    <th id="cell1"> 38</th>
+
+                    <th id="cell6"> 39</th>
+
+                    <th id="cell11"> 40</th>
+
+                    <th id="cell15"> 41</th>
+
+                    <th id="cell20"> 42</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell2"> 43</th>
+
+                    <th id="cell7"> 44</th>
+
+                    <th id="free">Free</th>
+
+                    <th id="cell16">46</th>
+
+                    <th id="cell21"> 47</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell3"> 48</th>
+
+                    <th id="cell8"> 49</th>
+
+                    <th id="cell12"> 50</th>
+
+                    <th id="cell17"> 51</th>
+
+                    <th id="cell22"> 52</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell4"> 53</th>
+
+                    <th id="cell9"> 54</th>
+
+                    <th id="cell13"> 55</th>
+
+                    <th id="cell18"> 56</th>
+
+                    <th id="cell23"> 57</th>
+
+                </tr>
+			
+			
+			
+			</table>
+			
+ 		</div>
+
+ 		
  		<div data-role="footer" data-position="fixed">
  			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
  			<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
@@ -92,7 +260,101 @@
  	</div> 
 <!--Session Page ends-->
 	
-	<div data-role="page" id="admin">
+	<div data-role="page" id="tpage">
+		<div data-role="header" data-position="fixed">
+			<h1></h1>
+		</div>
+		<div data-role="content" >
+		<a href="#askq" class="ui-btn ui-corner-all ">Back</a>
+		<h1>Team Name goes Here</h1>
+			
+		</div>
+		<div data-role="content" data-theme="b" id="bott1" data-role="inline">        
+			<table data-role="table" data-mode="columntoggle">
+				<tr>
+                    <th id="cell0"</th>
+                    <a href="#" class="cell">33</a>
+                    <th id="cell5" </th>
+                    <a href="#" class="cell">34</a>
+                    <th id="cell10"</th>
+                    <a href="#" class="cell">35</a>
+                    <th id="cell14"</th>
+                    <a href="#" class="cell">36</a>
+                    <th id="cell19"</th>
+                    <a href="#" class="cell">37</a>
+                </tr>
+
+                <tr>
+
+                    <th id="cell1"> 38</th>
+
+                    <th id="cell6"> 39</th>
+
+                    <th id="cell11"> 40</th>
+
+                    <th id="cell15"> 41</th>
+
+                    <th id="cell20"> 42</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell2"> 43</th>
+
+                    <th id="cell7"> 44</th>
+
+                    <th id="free">Free</th>
+
+                    <th id="cell16">46</th>
+
+                    <th id="cell21"> 47</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell3"> 48</th>
+
+                    <th id="cell8"> 49</th>
+
+                    <th id="cell12"> 50</th>
+
+                    <th id="cell17"> 51</th>
+
+                    <th id="cell22"> 52</th>
+
+                </tr>
+
+                <tr>
+
+                    <th id="cell4"> 53</th>
+
+                    <th id="cell9"> 54</th>
+
+                    <th id="cell13"> 55</th>
+
+                    <th id="cell18"> 56</th>
+
+                    <th id="cell23"> 57</th>
+
+                </tr>
+			
+			
+			
+			</table>
+			
+ 		</div>
+
+		
+		<div data-role="footer" data-position="fixed">
+			<a href="#home" class="ui-btn ui-corner-all footer-button-left ">Home</a>
+			<a href="#support" class="ui-btn ui-corner-all footer-button-right ">Support</a>
+		</div>
+	</div> 
+<!--Admin Page ends-->
+
+<div data-role="page" id="admin">
 		<div data-role="header" data-position="fixed">
 			<h1>Admin Page</h1>
 		</div>
@@ -140,8 +402,8 @@
 		<div data-role="content">
 		<h4>Search for existing venue:</h4>
 			<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search..." data-inset="true">
-			    <li><a href="#">venue 1</a></li>
-			    <li><a href="#">venue 2</a></li>
+			    <li><a href="#askq">venue 1</a></li>
+			    <li><a href="#askq">venue 2</a></li>
 			    <li><a href="#">venue 3</a></li>
 			    <li><a href="#">venue 4</a></li>
 			    <li><a href="#">venue 5</a></li>
@@ -177,8 +439,8 @@
 	     				<label for="notes" class="ui-hidden-accessible">Notes:</label>
 	    				<textarea name="textarea-1" id="textarea-1" placeholder="enter notes:" value=""></textarea>
 	    			</div>
-	    				<input type="submit" data-inline="true" data-theme="b" value="Submit">
-	 					<input type="reset" data-inline="true" data-theme="b"value="Reset">
+	    				<input type="submit" data-inline="true" data-theme="b" value="Submit" id="SR">
+	 					<input type="reset" data-inline="true" data-theme="b"value="Reset" id="SR">
 			</form>
 		</div>
 		<div data-role="footer" data-position="fixed">
