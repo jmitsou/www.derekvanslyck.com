@@ -26,7 +26,7 @@ $(document).ready(function(){
 	
 	
 	$('td').click(function(){
-		prompt("Are you sure?")
+		alert("Are you sure?")
         var toggle = this.style;
         toggle.backgroundColor = toggle.backgroundColor? "":"#3abd12";
         toggle.color = toggle.color? "":"#fff";

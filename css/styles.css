@@ -35,8 +35,8 @@ a.header-button-right.ui-btn.ui-corner-all {
 
 
 div#bott {
-	width: 100%;
-	padding: 1px;
+	background-color: #ffffff;
+	height: 30em;
 }
 
 td{
@@ -64,7 +64,7 @@ td{
 	cursor: default;
 }
 
-#wildspot{
+#wild{
 	background-color: #ebecd6;
 }
 
