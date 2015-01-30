@@ -8,24 +8,16 @@ p#qes {
 	text-align: center;
 }
 
-
-#topp{
-
-	position:fixed;
-	background-color: #ffffff;
-	color: #000000;
-	z-index: 1;
-	width: 100%;
-	padding-left: 0;
-	margin-top: 10px;
+p#cat {
+	text-align: center;
 }
 
-div#bott1{
-	z-index: -1;
+
+#topp{
+	background-color: #ffffff;
+	color: #000000;
 	width: 100%;
-	margin-top: 10px;
-	height: 400px;
-	
+	padding-left: 0;
 }
 
 
@@ -43,11 +35,38 @@ a.header-button-right.ui-btn.ui-corner-all {
 
 
 div#bott {
-	z-index: -1;
 	width: 100%;
-	margin-top: 220px;
+	padding: 1px;
 }
 
+td{
+	font-family: arial;
+	color: #333;
+	padding: 1;
+	width: 455px;
+	height: 50px;
+	text-align: center;
+	border: 2px solid #000000;
+	background-color: #eee;
+}
+
+.bingohead{
+	border: 10px solid #c2324c;
+}
+
+td{
+	cursor: pointer;
+}
+
+#free {
+	background-color: #3abd12;
+	color: #ffffff;
+	cursor: default;
+}
+
+#wildspot{
+	background-color: #ebecd6;
+}
 
 a.footer-button-left.ui-btn.ui-corner-all {
 	margin: 5px;
